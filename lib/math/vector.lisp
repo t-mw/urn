@@ -51,7 +51,7 @@
     :__mod nmod })
 
 (defun vector-item (x i)
-  "Get the I th element in the VECTOR."
+  "Get the I th element in vector X."
   (assert-type! x vector)
   (assert-type! i number)
   (unless (between? i 1 (vector-dim x))
